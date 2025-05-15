@@ -1,0 +1,100 @@
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 5px;
+  padding: 20px 24px;
+
+  border-bottom: 1px solid black;
+}
+
+.taskItem:hover .btnDeleteTask {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.taskItemDone .taskText {
+  text-decoration: line-through;
+  color: var(--color-gray-300);
+}
+
+.taskItemDone .taskText::after {
+  opacity: 1;
+}
+
+@media (max-width: 500px) {
+  .taskItem {
+    padding: 15px 5px;
+  }
+}
+
+.taskWrapper {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.taskCheckbox {
+  position: relative;
+
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  appearance: none;
+}
+
+@media (hover: hover) {
+  .taskCheckbox:hover {
+    background-color: var(--color-green-100);
+  }
+}
+
+.taskText {
+  flex-grow: 1;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.taskText::after {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 4px;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url(./check.svg);
+  background-size: cover;
+  opacity: 0;
+
+  content: "";
+  pointer-events: none;
+}
+
+.btnEditTask {
+  display: none;
+}
+
+.btnDeleteTask {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (hover: none) {
+  .btnDeleteTask {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .btnEditTask {
+    display: block;
+  }
+}

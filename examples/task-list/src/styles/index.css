@@ -1,0 +1,51 @@
+:root {
+  --color-black: #1b1f2b;
+  --color-white: #ffffff;
+  --color-orange-200: #efa501;
+  --color-green-100: #e0f0e5;
+  --color-green-300: #3b7e7b;
+  --color-green-400: #286562;
+  --color-gray-300: #a6a6a6;
+  --color-gray-200: #d9dfdb;
+  --color-gray-100: #f1f3f2;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5px;
+
+  font-family: "Roboto", sans-serif;
+  color: var(--color-black);
+
+  background-color: var(--color-green-100);
+}
+
+.textNormal {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.42;
+}
+
+button {
+  margin: 0;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.btnHidden {
+  display: none;
+}
+
+.input {
+  padding: 0;
+}

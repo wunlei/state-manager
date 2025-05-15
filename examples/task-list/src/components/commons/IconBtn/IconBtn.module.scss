@@ -1,0 +1,15 @@
+.iconBtn {
+  display: block;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background-color: transparent;
+  background-size: cover;
+
+  & svg {
+    width: 30px;
+    height: auto;
+  }
+}

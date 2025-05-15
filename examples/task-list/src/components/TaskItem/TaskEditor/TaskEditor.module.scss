@@ -1,0 +1,28 @@
+.editorContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 5px 35px;
+
+  border: 2px solid var(--color-green-300);
+  border-radius: 10px;
+
+  @media (max-width: 500px) {
+    padding: 5px;
+  }
+}
+
+@media (hover: hover) {
+  .editorContainer:hover {
+    background-color: var(--color-gray-100);
+  }
+}
+
+.inputText {
+  width: 100%;
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+}

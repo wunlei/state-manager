@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+
+  border: 1px solid var(--color-gray-300);
+  border-radius: 10px;
+
+  background-color: var(--color-gray-100);
+}
+
+
+// .containerFocused {
+//   outline: 2px solid var(--color-gray-300);
+// }
+
+@media (hover: hover) {
+  .container:hover {
+    background-color: var(--color-gray-200);
+  }
+}
+
+.inputTaskText {
+  display: block;
+  min-height: 30px;
+  width: 100%;
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
