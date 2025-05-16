@@ -1,28 +1,28 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "module": "esnext",
+    "module": "ESNext",
     "skipLibCheck": true,
-
+    "lib": ["ES2020"],
     "declaration": true,
+    "declarationMap": true,
     "isolatedDeclarations": true,
 
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
 
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "exactOptionalPropertyTypes": true,
-    "baseUrl": ".",
     "paths": {
       "state-manager": ["./src/index.ts"],
       "state-manager/*": ["./src/*.ts"]
