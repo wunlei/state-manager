@@ -14,3 +14,7 @@ cd examples/task-list && npm install
 # start the dev server
 npm run dev
 ```
+
+## Set up on Stackblitz
+
+Link - https://stackblitz.com/github/wunlei/state-manager/tree/master/examples/task-list

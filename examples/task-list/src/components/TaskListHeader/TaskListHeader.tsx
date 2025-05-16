@@ -53,7 +53,8 @@ function TaskListHeader() {
       <IconBtn
         classes={[`${!taskText && "btnHidden"}`]}
         title="Add task"
-        onClick={handleAddTask}>
+        onClick={handleAddTask}
+      >
         <AddTaskIcon />
       </IconBtn>
     </div>

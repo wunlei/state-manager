@@ -1,7 +1,7 @@
 import { createSelector } from "reselect";
 import { selectCurrFilter } from "../filters/selectors";
 import { FILTERS } from "@/constants";
-import { AppState } from "@/state/types";
+import type { AppState } from "@/state/types";
 
 const selectState = (state: AppState) => state;
 
@@ -17,7 +17,7 @@ export const selectTasks = createSelector(
     }
 
     return slice.tasks;
-  }
+  },
 );
 
 export const selectTasksIds = createSelector([selectTasks], (list) => {
@@ -28,7 +28,7 @@ export const selectTaskById = createSelector(
   [selectTasks, (_: AppState, id: number) => id],
   (tasks, id: number) => {
     return tasks.find((task) => task.id === id);
-  }
+  },
 );
 
 export const selectUndoneTasksCount = createSelector([selectTasks], (tasks) => {

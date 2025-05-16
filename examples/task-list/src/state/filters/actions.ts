@@ -1,5 +1,5 @@
-import { FiltersValues } from "@/state/filters/types";
-import { AppState } from "@/state/types";
+import type { FiltersValues } from "@/state/filters/types";
+import type { AppState } from "@/state/types";
 
 export function changeFilter(payload: FiltersValues) {
   return (state: AppState) => {

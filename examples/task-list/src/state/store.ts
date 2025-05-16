@@ -1,5 +1,5 @@
 import { FILTERS, TOGGLE_MODE } from "@/constants";
-import { AppState } from "@/state/types";
+import type { AppState } from "@/state/types";
 import {
   createSelectorHook,
   createUpdateStoreHook,

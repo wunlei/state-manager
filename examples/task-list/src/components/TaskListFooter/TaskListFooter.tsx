@@ -8,7 +8,7 @@ import s from "./TaskListFooter.module.scss";
 import { useAppSelector, useUpdateAppStore } from "@/state/store";
 import { changeFilter } from "@/state/filters/actions";
 import { clearCompletedTasks } from "@/state/tasks/actions";
-import { FiltersValues } from "@/state/filters/types";
+import type { FiltersValues } from "@/state/filters/types";
 
 function TaskListFooter() {
   const dispatch = useUpdateAppStore();
@@ -34,14 +34,16 @@ function TaskListFooter() {
               currentFilter === filter ? s.tabActive : ""
             }`}
             key={filter}
-            onClick={() => handleChangeFilter(filter)}>
+            onClick={() => handleChangeFilter(filter)}
+          >
             {filter}
           </button>
         ))}
       </div>
       <button
         className={`${s.btnClearCompleted} ${hasCompleted ? "" : s.btnHidden}`}
-        onClick={handleClearCompleted}>
+        onClick={handleClearCompleted}
+      >
         Clear completed
       </button>
     </div>

@@ -59,20 +59,23 @@ function TaskItem({ id }: props) {
             />
             <span
               className={s.taskText}
-              onDoubleClick={() => handleEditMode(true)}>
+              onDoubleClick={() => handleEditMode(true)}
+            >
               {text}
             </span>
           </div>
           <IconBtn
             title="Edit Task"
             classes={[s.btnEditTask]}
-            onClick={() => handleEditMode(true)}>
+            onClick={() => handleEditMode(true)}
+          >
             <EditIcon />
           </IconBtn>
           <IconBtn
             title="Delete Task"
             classes={[s.btnDeleteTask]}
-            onClick={handleDeleteTask}>
+            onClick={handleDeleteTask}
+          >
             <DeleteIcon />
           </IconBtn>
         </>

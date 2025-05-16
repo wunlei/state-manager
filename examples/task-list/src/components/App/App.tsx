@@ -2,9 +2,7 @@ import TaskList from "@/components/TaskList/TaskList";
 import TaskListHeader from "@/components/TaskListHeader/TaskListHeader";
 import TaskListFooter from "@/components/TaskListFooter/TaskListFooter";
 import ErrorBoundary from "@/components/commons/ErrorBoundary/ErrorBoundary";
-import {
-  selectTotalTasksCount,
-} from "@/state/tasks/selectors";
+import { selectTotalTasksCount } from "@/state/tasks/selectors";
 import s from "./App.module.scss";
 import { useAppSelector } from "@/state/store";
 

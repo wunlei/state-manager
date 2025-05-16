@@ -1,7 +1,7 @@
 import { newTaskId } from "@/utils";
 import { TOGGLE_MODE } from "@/constants";
-import { AppState } from "@/state/types";
-import { TaskUpdateTextPayload } from "@/state/tasks/types";
+import type { AppState } from "@/state/types";
+import type { TaskUpdateTextPayload } from "@/state/tasks/types";
 
 export function addTask(payload: string) {
   return (state: AppState) => {
